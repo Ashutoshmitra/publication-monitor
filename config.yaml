@@ -1,0 +1,22 @@
+monitors:
+  issuu:
+    enabled: true
+    publishers:
+      - themonseyview
+    check_interval_hours: 24
+    min_date: "2025-01-31"
+
+storage:
+  type: "gdrive"
+  folder_id: "your_folder_id_here"
+  credentials_path: "credentials/gdrive_credentials.json"
+
+notifications:
+  email:
+    enabled: true
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    sender_email: "your_email@gmail.com"
+    recipients:
+      - "recipient1@example.com"
+      - "recipient2@example.com"
